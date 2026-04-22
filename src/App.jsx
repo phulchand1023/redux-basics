@@ -8,7 +8,7 @@ const App = () => {
   const todos = useSelector((state) => state.todos);
 
   const handleAdd = () => {
-    if (text.trim() === "") return; // ✅ fixed
+    if (text.trim() === "") return; 
     dispatch(addTodo(text));
     setText("");
   };
@@ -35,7 +35,7 @@ const App = () => {
                 textDecoration: todo.completed ? "line-through" : "none",
               }}
             >
-              {todo.text} {/* ✅ fixed */}
+              {todo.text} 
             </span>
 
             <button
